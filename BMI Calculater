@@ -1,0 +1,16 @@
+n = input("Enter Your Name: ")
+w = int(input("Enter Your Weight in KGs: "))
+h = int(input("Enter Your Height in CMs: "))
+b = round((w/h**2)*10000)
+print("Your BMI is:",b)
+print("\r")
+print("Dear",n)
+if b <= 18:
+    print("You are Under Weight, You Should Eat More")
+elif b == range(19,23):
+    print("You are Normal")
+elif b == range(24,27):
+    print("You are Over Weight, You Should Eat Less")
+else:
+    print("You have Obesity, You Should Follow Proper Diet")
+print("Thank You")
